@@ -5,9 +5,9 @@ var assert = require('yeoman-generator').assert;
 var helpers = require('yeoman-generator').test;
 var os = require('os');
 
-describe('bower-component:app', function() {
+describe('bower-component:src', function() {
     before(function(done) {
-        helpers.run(path.join(__dirname, '../generators/app'))
+        helpers.run(path.join(__dirname, '../generators/src'))
             .withOptions({ skipInstall: true })
             .withPrompts({ someOption: true })
             .on('end', done);
@@ -16,9 +16,7 @@ describe('bower-component:app', function() {
     it('creates files', function() {
         assert.file([
             'bower.json',
-            'package.json',
-            '.editorconfig',
-            '.jshintrc'
+            'package.json'
         ]);
     });
 });

@@ -3,7 +3,7 @@
     "version": "0.0.0",
     "description": "Yeoman generator for creating stand-alone modules using bower",
     "license": "MIT",
-    "main": "app/index.js",
+    "main": "src/index.js",
     "repository": "ttn-himanshu/generator-bower-component",
     "author": {
         "name": "himanshu",
